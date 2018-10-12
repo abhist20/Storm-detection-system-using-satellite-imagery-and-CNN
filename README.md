@@ -2,6 +2,7 @@
 The detection of cyclones and hurricanes will be based on the meteorology satellite images database.These public databases contain free images of metreological data which will then be fed to a Convolutional Neural network which is created using TensorFlow libraries,A free API available on the tensorflow website which will be used as a classifier for the test image.
 
 The steps for the Project,
+
 1.Traning the API based inception model with the meterological database images.
 
 2.Setting catrgories of classification as image with potential of causing a hurricane as that can be easily done due to the labled database of past hurricanes.
