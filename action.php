@@ -1,3 +1,3 @@
  <?
-       exec("D:\home\site\wwwroot\hello.py/")
+       exec("D:\home\site\wwwroot\hello.py")
  ?>
