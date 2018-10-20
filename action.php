@@ -1,3 +1,3 @@
  <?php
-       exec("python /var/www/open.py")
+       exec("D:\home\site\wwwroot\hello.py")
     php?>
