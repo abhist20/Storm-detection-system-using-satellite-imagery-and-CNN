@@ -1,3 +1,3 @@
  <?
-       exec("python D:\home\site\wwwroot\hello.py")
+     echo exec("python D:\home\site\wwwroot\hello.py")
  ?>
