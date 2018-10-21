@@ -4,7 +4,7 @@
 body {
   font-family: "Courier New", Helvetica, sans-serif;
  
-    background: url(weather.jpg);
+    background-image: url(weather.jpg);
     background-repeat: no-repeat;
     background-size: auto;
 
