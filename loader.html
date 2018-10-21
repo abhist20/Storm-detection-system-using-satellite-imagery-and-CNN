@@ -1,4 +1,4 @@
-<?php
+
 <html>
     <head>
 
@@ -61,21 +61,21 @@
 
     function load()
     {
-    window.location.href = "D:\home\site\wwwroot\action.php";
+    window.location.href = "file:///D:\home\site\wwwroot\action.php";
 
     }
 
     function myFunction() {
-    myVar = setTimeout(load, onload="D:\home\site\wwwroot\action.php");
+    myVar = setTimeout(load,3000);
 }
     </script>
     </head>
 
-    <body onload="load()">
+    <body onload="myFunction">
    <div id="loader"></div> 
 <h1>Hello World!</h1>
 
     </body>
 
     </html> 
-          ?>
+     
