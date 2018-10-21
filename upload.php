@@ -42,5 +42,5 @@ if ($uploadOk == 0) {
         echo nl2br("Sorry, there was an error uploading your file.\n");
     }
 }
-echo nl2br("Please go back to last Page and press predict");
+echo <strong>nl2br("Please go back to last Page and press predict")</strong>;
 ?>
