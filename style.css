@@ -3,9 +3,5 @@
 
 body {
   font-family: "Courier New", Helvetica, sans-serif;
- 
-    background-image: url(weather.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-
-}
+  background-image: url(weather.jpg);
+  }
