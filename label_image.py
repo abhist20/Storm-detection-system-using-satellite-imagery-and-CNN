@@ -74,7 +74,7 @@ def load_labels(label_file):
 
 
 if __name__ == "__main__":
-  file_name = "D:\\home\\site\\wwwroot\\data\\A.jpg"
+  file_name = "D:\\home\\site\\wwwroot\\uploads\\A.jpg"
   model_file = \
     "D:\\home\\site\\wwwroot\\train\\output_graph.pb"
   label_file = "D:\\home\\site\\wwwroot\\train\\output_labels.txt"
@@ -139,7 +139,7 @@ if __name__ == "__main__":
   labels = load_labels(label_file)
   for i in top_k:
     print(labels[i], results[i])
-  src = "D:\\home\\site\\wwwroot\\uploads\\*.jpg"
+  src = "D:\\home\\site\\wwwroot\\uploads\\A.jpg"
   dst = "D:\\home\\site\\wwwroot\\data"
   shutil.move(src, dst)
   print (hi)
