@@ -138,7 +138,7 @@ if __name__ == "__main__":
   top_k = results.argsort()[-5:][::-1]
   labels = load_labels(label_file)
   for i in top_k:
-    print(labels[i], results[i])
+    print(labels[0], results[0])
   #src = "D:\\home\\site\\wwwroot\\uploads\\A.jpg"
   #dst = "D:\\home\\site\\wwwroot\\data"
   #shutil.move(src, dst)
