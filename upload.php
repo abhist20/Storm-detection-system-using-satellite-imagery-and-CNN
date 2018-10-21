@@ -37,12 +37,16 @@ if ($uploadOk == 0) {
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-    <form>
-    <button type="button" onclick="parent.location='action.php';parent.loaction='loader.html">predict</button>
-    </form>
     
     } else {
         echo "Sorry, there was an error uploading your file.";
     }
 }
+<html>
+<body>
+<form>
+    <button type="button" onclick="parent.location='action.php';parent.loaction='loader.html">predict</button>
+    </form>
+    </body>
+    </html>
 ?>
