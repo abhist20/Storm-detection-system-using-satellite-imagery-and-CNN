@@ -42,11 +42,5 @@ if ($uploadOk == 0) {
         echo "Sorry, there was an error uploading your file.";
     }
 }
-<html>
-<body>
-<form>
-    <button type="button" onclick="parent.location='action.php';parent.loaction='loader.html">predict</button>
-    </form>
-    </body>
-    </html>
+
 ?>
