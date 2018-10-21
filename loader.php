@@ -61,7 +61,7 @@
 
     function load()
     {
-    window.location.href = "action.php";
+    window.location.href = "D:\home\site\wwwroot\action.php";
 
     }
 
@@ -71,7 +71,7 @@
     </script>
     </head>
 
-    <body onload="myFunction()">
+    <body onload="load()">
    <div id="loader"></div> 
 <h1>Hello World!</h1>
 
