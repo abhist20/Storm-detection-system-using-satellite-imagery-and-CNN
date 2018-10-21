@@ -1,16 +1,10 @@
 
 /* your CSS styles can go here */
-html { 
-  background: url(weather.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 body {
   font-family: "Courier New", Helvetica, sans-serif;
  
-    background: url(D:\home\site\wwwroot\weather.jpg);
+    background: url(weather.jpg);
     background-repeat: no-repeat;
     background-size: auto;
 
