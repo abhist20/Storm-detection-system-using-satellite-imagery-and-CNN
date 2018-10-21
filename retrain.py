@@ -1167,13 +1167,13 @@ if __name__ == '__main__':
   parser.add_argument(
       '--output_graph',
       type=str,
-      default='/tmp/output_graph.pb',
+      default='D:\\home\\site\\wwwroot\\train\\',
       help='Where to save the trained graph.'
   )
   parser.add_argument(
       '--intermediate_output_graphs_dir',
       type=str,
-      default='/tmp/intermediate_graph/',
+      default='D:\\home\\site\\wwwroot\\train\\',
       help='Where to save the intermediate graphs.'
   )
   parser.add_argument(
@@ -1188,19 +1188,19 @@ if __name__ == '__main__':
   parser.add_argument(
       '--output_labels',
       type=str,
-      default='/tmp/output_labels.txt',
+      default='D:\\home\\site\\wwwroot\\train\\',
       help='Where to save the trained graph\'s labels.'
   )
   parser.add_argument(
       '--summaries_dir',
       type=str,
-      default='/tmp/retrain_logs',
+      default='D:\\home\\site\\wwwroot\\train\\',
       help='Where to save summary logs for TensorBoard.'
   )
   parser.add_argument(
       '--how_many_training_steps',
       type=int,
-      default=4000,
+      default=1000,
       help='How many training steps to run before ending.'
   )
   parser.add_argument(
