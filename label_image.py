@@ -142,5 +142,5 @@ if __name__ == "__main__":
   src = "D:\\home\\site\\wwwroot\\uploads\\*.jpg"
   dst = "D:\\home\\site\\wwwroot\\data"
   shutil.move(src, dst)
-  print "hi"
+  print (hi)
 
