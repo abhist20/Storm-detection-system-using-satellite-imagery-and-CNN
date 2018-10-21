@@ -139,8 +139,8 @@ if __name__ == "__main__":
   labels = load_labels(label_file)
   for i in top_k:
     print(labels[i], results[i])
-  src = "D:\\home\\site\\wwwroot\\uploads\\A.jpg"
-  dst = "D:\\home\\site\\wwwroot\\data"
-  shutil.move(src, dst)
-  print (hi)
+  #src = "D:\\home\\site\\wwwroot\\uploads\\A.jpg"
+  #dst = "D:\\home\\site\\wwwroot\\data"
+  #shutil.move(src, dst)
+  #print (hi)
 
