@@ -1,5 +1,9 @@
 <?php
 $target_dir = "D:\home\site\wwwroot\uploads/";
+$info = pathinfo($_FILES["fileToUpload"]["name"]);
+$ext = $info['extension'];
+$newname = "A.".$ext;
+$target = $target_dir . $newname;
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
@@ -35,7 +39,7 @@ if ($uploadOk == 0) {
     echo nl2br("Sorry, your file was not uploaded.\n");
 // if everything is ok, try to upload file
 } else {
-    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target)) {
         echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.\n";
     
     } else {
