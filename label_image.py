@@ -138,7 +138,7 @@ if __name__ == "__main__":
   top_k = results.argsort()[-5:][::-1]
   labels = load_labels(label_file)
   #for i in top_k:
-  print("NO CYCLONE=",int(results[0]*100)"Percent",":    :","\tCYCLONE=", int(results[1]*100)"Percent")
+  print("NO CYCLONE=",int(results[0]*100),"Percent",":    :","\tCYCLONE=", int(results[1]*100),"Percent")
   
   os.remove("D:\\home\\site\\wwwroot\\uploads\\A.jpg")
   #dst = "D:\\home\\site\\wwwroot\\data"
