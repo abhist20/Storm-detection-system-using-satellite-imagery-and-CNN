@@ -11,7 +11,7 @@ $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 if(isset($_POST["submit"])) {
     $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
     if($check !== false) {
-        echo "File is an image - " . $check["mime"] . ".";
+        //echo "File is an image - " . $check["mime"] . ".";
         $uploadOk = 1;
     } else {
         echo "File is not an image.\n";
@@ -29,9 +29,8 @@ if ($_FILES["fileToUpload"]["size"] > 838860800) {
     $uploadOk = 0;
 }
 // Allow certain file formats
-if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-&& $imageFileType != "gif" && $imageFileTyre != "pb" ) {
-    echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.\n";
+if($imageFileType != "jpg") {
+    echo "Sorry, only JPG.\n";
     $uploadOk = 0;
 }
 // Check if $uploadOk is set to 0 by an error
@@ -40,7 +39,7 @@ if ($uploadOk == 0) {
 // if everything is ok, try to upload file
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target)) {
-        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.\n";
+        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded Succesfully.\n";
     
     } else {
         echo nl2br("Sorry, there was an error uploading your file.\n");
