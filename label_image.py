@@ -22,7 +22,7 @@ import argparse
 import numpy as np
 import tensorflow as tf
 import shutil
-
+import os
 
 def load_graph(model_file):
   graph = tf.Graph()
@@ -137,9 +137,10 @@ if __name__ == "__main__":
 
   top_k = results.argsort()[-5:][::-1]
   labels = load_labels(label_file)
-  for i in top_k:
-    print(labels[1], results[1])
-  #src = "D:\\home\\site\\wwwroot\\uploads\\A.jpg"
+  #for i in top_k:
+  print("NO CYCLONE=",int(results[0]*100)"Percent",":    :","\tCYCLONE=", int(results[1]*100)"Percent")
+  
+  os.remove("D:\\home\\site\\wwwroot\\uploads\\A.jpg")
   #dst = "D:\\home\\site\\wwwroot\\data"
   #shutil.move(src, dst)
   #print (hi)
