@@ -39,12 +39,12 @@ if ($uploadOk == 0) {
 // if everything is ok, try to upload file
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target)) {
-        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded Succesfully.\n";
+        echo "The file has been uploaded Succesfully.\n";
     
     } else {
         echo nl2br("Sorry, there was an error uploading your file.\n");
     }
 }
 
-echo nl2br("Please go back to last Page and press predict");
+echo nl2br("Please go back(by pressing back button) to last Page and press predict");
 ?>
