@@ -2,36 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HURRICANES AND CYCLONE</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body >
 
-    <h1 align="center"><font face="Courier New">PREDICTION OF HURRRICANE AND CYCLONE</face></h1>
-    <b>Please select image from this site:-<a href="https://worldview.earthdata.nasa.gov">link text</a>
-    <ul>
-         <li>click on camera</li>
-         <li>select area</li>
-         <li>save image as "A.jpg" and upload</li>
-         </ul>
+    <h1 align="center"><font face="Courier New">PREDICTION OF HURRICANE AND CYCLONE</face></h1>
+    <p1><p><b>To use the model for predection of cyclone you need to do the following steps:-</b></p>
+    <ol >
+         <li>Go to the website to get the real time satellite image of location where you want to predict cyclone.(LINK IS PROVIDED BELOW)</li>
+         <li>Click on camera on the right corner.</li>
+         <li>Select area of image.</li>
+         <li>Click download and image format as "JPG" only.</li>
+         <li>Then right click and save image as name of image and extention as jpg.</li>
+         <li>Then again come back to the website and choose file to upload.</li>
+         <li>Upload the newly downloaded image.</li>
+         <li>Click PREDICT!</li>
+         <li>The image will be fed to neural network and results will be shown in '60-90' seconds.</li>
+         </ol>
         
+    <b>Please select image from this site:-<a href="https://worldview.earthdata.nasa.gov">link text</a>
     
-    
-    <form action="upload.php" method="post" enctype="multipart/form-data">
+    <form action="upload.php" method="post" enctype="multipart/form-data" >
         <br>
         <input type="file" name="fileToUpload" id="fileToUpload">
         <input type="submit" value="Upload Image" name="submit">
     </form>
+    
+    <p> Click the button to get your coordinates.</p>
     </b>
-    <html>
-<body>
+   <button onclick="getLocation()">GET CO-CORDINATES</button>
+<p id="demo"></p>
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.watchPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";}
+    }
+    
+function showPosition(position) {
+    x.innerHTML="Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
 <form>
-    <button type="button" onclick="parent.location='action.php'">predict</button>
+    <button class="button button3" type="button" onclick="parent.location='action.php'">PREDICT</button>
     </form>
+    </p1>
+    FOR FURTHER INFORMATION ON THIS PROJECT THIS IS DOCUMENTATION PAGE.<a href="">PAGE</a>
+  <b>
+  <div class="footer">
+  <p>Created By: ABHISHEK JOSHI</p>
+  <p>Contact information: <a href="mailto:abhist20@gmail.com">
+  abhist20@gmail.com</a></p>
+  <p>Linkedin Profile: <a href="https://www.linkedin.com/in/abhishek-joshi-a8410a158">
+  Abhishek Joshi</a></p>
+  </div>
+  </b> 
+
     </body>
     </html>
     
-    <h1>-BY Abhi<h1>
-</body>
-</html>
+    
+
